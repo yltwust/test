@@ -1810,6 +1810,7 @@ case "$Input" in
 esac
 }
 if [ $# == 0 ]; then
+WGCFins()
 if [[ -n $(type -P warp-go) && -z $(type -P wg-quick) ]] && [[ -f '/root/CFwarp.sh' ]]; then
 ONEWARPGO
 elif [[ -n $(type -P warp-go) && -n $(type -P warp-cli) && -z $(type -P wg-quick) ]] && [[ -f '/root/CFwarp.sh' ]]; then
