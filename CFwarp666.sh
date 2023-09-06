@@ -1806,11 +1806,11 @@ readp " 请输入数字:" Input
 case "$Input" in     
  1 ) ONEWARPGO;;
  2 ) ONEWGCFWARP;;
+ 3 ）WGCFins;;
  * ) exit 
 esac
 }
 if [ $# == 0 ]; then
-WGCFins
 if [[ -n $(type -P warp-go) && -z $(type -P wg-quick) ]] && [[ -f '/root/CFwarp.sh' ]]; then
 ONEWARPGO
 elif [[ -n $(type -P warp-go) && -n $(type -P warp-cli) && -z $(type -P wg-quick) ]] && [[ -f '/root/CFwarp.sh' ]]; then
