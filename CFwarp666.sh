@@ -1806,7 +1806,6 @@ readp " 请输入数字:" Input
 case "$Input" in     
  1 ) ONEWARPGO;;
  2 ) WGCFins;;
- 3 ) WGCFins;;
  * ) exit 
 esac
 }
